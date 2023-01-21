@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>insert student</title>
+</head>
+
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            <header class="signup-header">
+                <h1>Welcome to Student</h1>
+                <p>a good student database</p>
+            </header>
+
+            <main class="signup-body">
+                <% for (let index = 0; index < studentData.length; index++) { %>
+                    <p>name:
+                        <%= studentData[index].name %>
+                    </p>
+                    <p>email:
+                        <%= studentData[index].email %>
+                    </p>
+                    <p>ID:
+                        <%= studentData[index].studentID %>
+                    </p>
+                    <hr>
+
+                    <%}%>
+
+
+            </main>
+            <footer>
+                <p>Made with love in Dhaka</p>
+            </footer>
+        </div>
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+    </div>
+</body>
+
+</html>
